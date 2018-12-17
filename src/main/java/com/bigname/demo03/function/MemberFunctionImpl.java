@@ -15,11 +15,11 @@ public class MemberFunctionImpl implements IMemberFunction{
 	public Member login(String name, String passsword) throws Exception {
 		System.out.println(name + passsword);
 		if(StringUtil.isNullOrZero(name)){
-			System.out.println("ÓÃ‘ôÃû²»ÄÜé¿Õ");
+			System.out.println("ç”¨æˆ¶åä¸èƒ½ç‚ºç©º");
 			return null;
 		}
 		if(StringUtil.isNullOrZero(passsword)){
-			System.out.println("ÃÜ´a²»ÄÜé¿Õ");
+			System.out.println("å¯†ç¢¼ä¸èƒ½ç‚ºç©º");
 			return null;
 		}
 		Member member = mDao.selectMemberByName(name);
